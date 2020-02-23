@@ -1,0 +1,11 @@
+.c-header {
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    border-bottom: 1px solid $sub-color;
+    background-color: #fff;
+    opacity: .8;
+    .title {
+        font-size: 2rem;
+    }
+}
