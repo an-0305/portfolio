@@ -1,11 +1,51 @@
 .c-header {
-    position: fixed;
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 1rem;
     border-bottom: 1px solid $sub-color;
-    background-color: #fff;
-    opacity: .8;
     .title {
         font-size: 2rem;
+    }
+    .navi {
+        display: block;
+        width: 2rem;
+        height: 1.6rem;
+        position: relative;
+        span {
+            position: absolute;
+            display: inline-block;
+            width: 2rem;
+            height: .2rem;
+            background-color: $primary-color;
+            &::after,
+            &::before {
+                position: absolute;
+                content: '';
+                display: inline-block;
+                width: 2rem;
+                height: .2rem;
+                background-color: $primary-color;
+            }
+            &::after {
+                top: 1.4rem;
+            }
+            &::before {
+                top: .7rem;
+            }
+        }
+        &.active {
+            span {
+                transform: rotate(45deg);
+                top: .6rem;
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    top: 0;
+                    transform: rotate(-95deg);
+                }
+            }
+        }
     }
 }
