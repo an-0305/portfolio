@@ -34,5 +34,18 @@
                 top: .7rem;
             }
         }
+        &.active {
+            span {
+                transform: rotate(45deg);
+                top: .6rem;
+                &::after {
+                    display: none;
+                }
+                &::before {
+                    top: 0;
+                    transform: rotate(-95deg);
+                }
+            }
+        }
     }
 }
