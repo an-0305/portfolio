@@ -2,7 +2,7 @@
   <div v-bind:class="{active: isMenuActive}" class="c-menu">
     <ul class="menu-list">
       <li class="menu-item">
-        <a href="">about</a>
+        <a href="about">about</a>
       </li>
       <li class="menu-item">
         <a href="">skills</a>
