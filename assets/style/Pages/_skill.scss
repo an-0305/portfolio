@@ -1,0 +1,20 @@
+.p-skill {
+  .content-section {
+    margin-bottom: 3rem;
+    .head {
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+    .skill-items {
+      margin: 0;
+      padding-left: 2rem;
+      list-style: circle;
+      .item {
+        margin-bottom: 1rem;
+      }
+    }
+    .notice {
+      display: block;
+    }
+  }
+}
