@@ -3,11 +3,18 @@
     <h1 class="title">
       <a href="/">akari.life</a>
     </h1>
-    <div class="navi">
+    <div @click="onClickNavi" class="navi">
       <span />
     </div>
   </header>
 </template>
 
 <script>
+export default {
+  methods: {
+    onClickNavi () {
+      this.$store.commit('toggleMenuActive')
+    }
+  }
+}
 </script>

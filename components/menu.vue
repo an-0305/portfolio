@@ -1,5 +1,5 @@
 <template>
-  <div class="c-menu">
+  <div v-bind:class="{active: isMenuActive}" class="c-menu">
     <ul class="menu-list">
       <li class="menu-item">
         <a href="">about</a>
@@ -13,3 +13,14 @@
     </ul>
   </div>
 </template>
+
+<script>
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState({
+      isMenuActive: state => state.isMenuActive
+    })
+  }
+}
+</script>
