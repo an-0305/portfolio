@@ -5,7 +5,7 @@
         <a href="about">about</a>
       </li>
       <li class="menu-item">
-        <a href="">skills</a>
+        <a href="skill">skill</a>
       </li>
       <li class="menu-item">
         <a href="">work</a>
