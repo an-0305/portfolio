@@ -8,7 +8,7 @@
         <a href="skill">skill</a>
       </li>
       <li class="menu-item">
-        <a href="">work</a>
+        <a href="work">work</a>
       </li>
     </ul>
   </div>
