@@ -1,4 +1,7 @@
 .p-top {
+  .content + .content {
+    margin-top: 7rem;
+  }
   .button-wrap {
     padding-top: 2rem;
     text-align: center;
@@ -18,5 +21,8 @@
         height: 5rem;
       }
     }
+  }
+  .work-wrap {
+    margin-bottom: 3rem;
   }
 }

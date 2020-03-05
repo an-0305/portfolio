@@ -1,6 +1,6 @@
 <template>
 <div class="o-container p-top">
-  <section class="skill">
+  <section class="content skill">
     <h2 class="title">skill</h2>
     <div class="skill-wrap">
       <h3 class="head">フロントエンド</h3>
@@ -17,6 +17,20 @@ Google Analyticsだけでは追えないデータはスクレイピングによ�
       <h3 class="head">ツール</h3>
       <div class="icon"><img src="../assets/images/tool.svg" alt=""></div>
       <p>開発はバージョン管理ツールとしてGitを利用、通常業務にはSpreadSheet(GAS含む)などG Suite製品をよく利用しています。マーケティングにおいてはGoogle Data Portalでレポーティングを行なっています。</p>
+    </div>
+    <div class="button-wrap">
+      <nuxt-link to="skill" class="c-button">View More</nuxt-link>
+    </div>
+  </section>
+  <section class="content work">
+    <h2 class="title">work</h2>
+    <div class="work-wrap">
+      <h3 class="head">アパレル系ECサイトの構築・保守</h3>
+      <p>デザインを元にアパレル系ECサイトのコーディングを行いました。CSSフレームワークはITCSSをベースとし、最小限の工数で多数のECサイトをオープンさせるため共通機能をコンポーネント化しました。</p>
+    </div>
+    <div class="work-wrap">
+      <h3 class="head">アパレル系ECサイトのコンサルティング</h3>
+      <p>月に一度、アパレル系ECサイトのコンサルティングを行いました。Google Analyticsや受注データから売上分析を行いました。</p>
     </div>
     <div class="button-wrap">
       <nuxt-link to="skill" class="c-button">View More</nuxt-link>
