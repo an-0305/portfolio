@@ -2,10 +2,6 @@
 <div class="p-top">
   <div class="mainvisual">
   </div>
-  <div class="maintitle">
-    <p>Akari Nakamura</p>
-    <p>Fronted Engineer,Web Consulting</p>
-  </div>
   <div class="o-container p-top">
     <section class="content about">
       <h2 class="title">about</h2>
@@ -15,6 +11,9 @@
         <p>一番の強みは開発からマーケティングまで短期間で様々な領域の業務を経験したこと。</p>
         <p>そのため開発する際も作って終わるだけでなく、その後の運用のことまであらかじめ考えた設計や提案ができます。</p>
         <p>マーケティングにおいても、開発の経験を活かしてプログラミングによってタスクを自動化したり、スクレイピングによるデータ収集を行うことができます。</p>
+      </div>
+      <div class="button-wrap">
+        <nuxt-link to="about" class="c-button">View More</nuxt-link>
       </div>
     </section>
     <section class="content skill">
