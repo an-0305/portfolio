@@ -1,0 +1,36 @@
+.p-top {
+  .content + .content {
+    margin-top: 10rem;
+  }
+  .button-wrap {
+    padding-top: 2rem;
+    text-align: center;
+  }
+  .skill {
+    .skill-wrap {
+      margin-bottom: 3rem;
+    }
+    .head {
+      text-align: center;
+      font-weight: bold;
+    }
+    .icon {
+      text-align: center;
+      img {
+        width: 5rem;
+        height: 5rem;
+      }
+    }
+  }
+  .work-wrap {
+    margin-bottom: 3rem;
+  }
+}
+
+.mainvisual {
+  height: 50rem;
+  margin-bottom: 5rem;
+  background: url('../images/top.jpg') 50% no-repeat fixed;
+  background-size: cover;
+  opacity: .3;
+}
