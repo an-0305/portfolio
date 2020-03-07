@@ -8,11 +8,19 @@
   }
   .skill {
     .skill-wrap {
+      @include desktop {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    .skill-item {
       margin-bottom: 3rem;
+      @include desktop {
+        width: 280px;
+      }
     }
     .head {
       text-align: center;
-      font-weight: bold;
     }
     .icon {
       text-align: center;
