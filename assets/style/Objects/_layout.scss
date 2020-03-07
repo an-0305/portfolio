@@ -2,7 +2,7 @@
   padding: 0 2rem;
   margin-bottom: 10rem;
   @include desktop {
-    width: 960px;
+    width: $container-width;
     margin: 0 auto 10rem;
   }
   .title {
