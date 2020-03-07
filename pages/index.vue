@@ -1,8 +1,8 @@
 <template>
-<div class="p-top">
+<main class="p-top">
   <div class="mainvisual">
   </div>
-  <div class="o-container p-top">
+  <div class="o-container">
     <section class="content about">
       <h2 class="title">about</h2>
       <div>
@@ -49,9 +49,9 @@
         <p>月に一度、アパレル系ECサイトのコンサルティングを行いました。Google Analyticsや受注データから売上分析を行いました。</p>
       </div>
       <div class="button-wrap">
-        <nuxt-link to="skill" class="c-button">View More</nuxt-link>
+        <nuxt-link to="work" class="c-button">View More</nuxt-link>
       </div>
     </section>
   </div>
-</div>
+</main>
 </template>

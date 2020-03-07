@@ -25,12 +25,12 @@
   .work-wrap {
     margin-bottom: 3rem;
   }
+  .mainvisual {
+    height: 50rem;
+    margin: 0 -2rem 5rem;
+    background: url('../images/top.jpg') 50% no-repeat fixed;
+    background-size: cover;
+    opacity: .3;
+  }
 }
 
-.mainvisual {
-  height: 50rem;
-  margin-bottom: 5rem;
-  background: url('../images/top.jpg') 50% no-repeat fixed;
-  background-size: cover;
-  opacity: .3;
-}
