@@ -1,9 +1,14 @@
 .o-container {
   padding: 0 2rem;
   margin-bottom: 10rem;
+  @include desktop {
+    width: 960px;
+    margin: 0 auto 10rem;
+  }
   .title {
     margin: 3rem 0;
     text-align: center;
     letter-spacing: .1em;
   }
+  
 }
