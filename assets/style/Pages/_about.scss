@@ -3,9 +3,15 @@
     .img {
       height: calc(90vw * 0.52);
       text-align: center;
+      @include desktop {
+        height: auto;
+      }
       img {
         width: 50%;
         border-radius: 50%;
+        @include desktop {
+          max-width: 300px;
+        }
       }
     }
   }
