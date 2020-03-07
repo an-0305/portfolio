@@ -3,10 +3,8 @@
   padding: .5rem 2rem;
   text-align: center;
   border: 1px solid $primary-color;
-  @include desktop {
-    &:hover {
-      background: $primary-color;
-      color: #fff;
-    }
+  &:hover {
+    background: $primary-color;
+    color: #fff;
   }
 }

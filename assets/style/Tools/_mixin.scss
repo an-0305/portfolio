@@ -3,3 +3,8 @@
     @content;
   }
 }
+@mixin menu-desktop {
+  @media screen and (min-width:$menu-desktop-width) {
+    @content;
+  }
+}
