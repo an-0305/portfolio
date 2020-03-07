@@ -16,6 +16,16 @@
   height: 100%;
   background-color: #fff;
   display: none;
+  @include menu-desktop {
+    position: absolute;
+    top: 300px;
+    display: block;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    transform: rotate(90deg);
+    z-index: 100;
+  }
   .menu-list {
     margin: 0;
     display: flex;
@@ -23,9 +33,15 @@
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    @include menu-desktop {
+      flex-direction: row;
+    }
     .menu-item {
       padding: 1.5rem 0;
       font-weight: bold;
+      @include menu-desktop {
+        padding: 0 1.5rem;
+      }
     }
   }
   &.active {
