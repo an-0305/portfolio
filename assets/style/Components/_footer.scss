@@ -1,0 +1,24 @@
+.c-footer {
+  padding: 1rem 0;
+  .links {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .link-item {
+    width: 3.2rem;
+    height: 3.2rem;
+    & + .link-item {
+      margin-left: 3rem;
+    }
+  }
+  .icon {
+    display: inline-block;
+    width: 100%;
+  }
+  .copyright {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
