@@ -49,7 +49,7 @@
         <p>月に一度、アパレル系ECサイトのコンサルティングを行いました。Google Analyticsや受注データから売上分析を行いました。</p>
       </div>
       <div class="button-wrap">
-        <nuxt-link to="skill" class="c-button">View More</nuxt-link>
+        <nuxt-link to="work" class="c-button">View More</nuxt-link>
       </div>
     </section>
   </div>
