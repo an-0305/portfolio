@@ -3,7 +3,7 @@
     <h2 class="title">about</h2>
     <div class="content">
       <div class="img">
-        <img src="../assets/images/about.png" alt="">
+        <img src="../assets/images/about.jpg" alt="">
       </div>
       <p>1996年 福岡県出身</p>
       <p>大学は理学部生物学科出身で細胞生物学の研究を行う</p>
