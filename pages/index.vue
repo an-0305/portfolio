@@ -1,8 +1,8 @@
 <template>
-<div class="p-top">
+<main class="p-top">
   <div class="mainvisual">
   </div>
-  <div class="o-container p-top">
+  <div class="o-container">
     <section class="content about">
       <h2 class="title">about</h2>
       <div>
@@ -53,5 +53,5 @@
       </div>
     </section>
   </div>
-</div>
+</main>
 </template>
