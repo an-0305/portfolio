@@ -38,21 +38,16 @@
         <div class="skill-wrap">
           <div class="skill-wrap-table">
             <table class="skill-table">
-              <tr>
-                <th>Google Analytics</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>Google Tag Manager</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>SQL</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>Python</th>
-                <td>★</td>
+              <tr v-for="item in marketingSkill" :key="item.type">
+                <th>
+                  {{ item.type }}
+                </th>
+                <td>
+                  <span v-for="num of maxLevel" :key="num">
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg" class="skill-level-icon"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg" class="skill-level-icon"></span>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -70,25 +65,16 @@
         <div class="skill-wrap">
           <div class="skill-wrap-table">
             <table class="skill-table">
-              <tr>
-                <th>Google Spreadsheet(GAS)</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>Googleデータポータル</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>Backlog</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>Git</th>
-                <td>★★</td>
-              </tr>
-              <tr>
-                <th>Sketch</th>
-                <td>★</td>
+              <tr v-for="item in Tool" :key="item.type">
+                <th>
+                  {{ item.type }}
+                </th>
+                <td>
+                  <span v-for="num of maxLevel" :key="num">
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg" class="skill-level-icon"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg" class="skill-level-icon"></span>
+                  </span>
+                </td>
               </tr>
             </table>
           </div>
@@ -114,6 +100,19 @@ export default {
         { type: 'Javascript', level: 2 },
         { type: 'Vue.js', level: 1 },
         { type: 'Nuxt.js', level: 1 }
+      ],
+      marketingSkill: [
+        { type: 'Google Analytics', level: 2 },
+        { type: 'Google Tag Manager', level: 2 },
+        { type: 'SQL', level: 2 },
+        { type: 'Python', level: 1 }
+      ],
+      Tool: [
+        { type: 'Googleスプレッドシート(GAS)', level: 2 },
+        { type: 'Googleデータポータル', level: 2 },
+        { type: 'Backlog', level: 2 },
+        { type: 'Git', level: 2 },
+        { type: 'Sketch', level: 1 }
       ]
     }
   }
