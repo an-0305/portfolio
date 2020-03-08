@@ -17,8 +17,8 @@
                 </th>
                 <td>
                   <span v-for="num of maxLevel" :key="num">
-                    <span v-if="item.level >= num"><img src="../assets/images/star.svg"></span>
-                    <span v-else><img src="../assets/images/star-edge.svg"></span>
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg" class="skill-level-icon"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg" class="skill-level-icon"></span>
                   </span>
                 </td>
               </tr>
