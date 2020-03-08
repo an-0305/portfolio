@@ -6,6 +6,7 @@
     border-bottom: 1px solid $sub-color;
     &.fixed {
         position: fixed;
+        top: 0;
         width: 100%;
         background: #fff;
         z-index: 100;
