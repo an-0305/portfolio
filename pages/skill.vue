@@ -27,6 +27,7 @@
           <div class="skill-wrap-description">
             <p class="skill-description">
               デザインを元にHTML/CSS/Javascriptの設計・実装。特に共通機能はコンポーネント化するなど、保守性に気をつけた設計・実装を行っています。
+              CSS設計については、ITCSS(SMACSSの派生)を参考にして、目的別にCSSをいくつかのレイヤーに分け、詳細度が徐々に高く明示的になるようにして、style定義の無駄な重複や詳細度の衝突が発生しづらい設計とするよう心がけています。
             </p>
           </div>
         </div>
@@ -54,6 +55,8 @@
           <div class="skill-wrap-description">
             <p class="skill-description">
               Google Analyticsを用いてサイト内分析を行うことができます。 Google Analyticsだけでは追えないデータはスクレイピングによりデータ収集したり、受注データなどの各種データベースからSQLにより抽出・集計しています。
+              Google Tag Managerは広告タグの管理やカスタムJavascriptを書いて必要とするイベントを取得することが可能です。
+              SQLはデータ抽出業務で利用していたため、SELECT文でテーブル結合や集計関数、サブクエリを用いてクエリを書くことができます。
             </p>
           </div>
         </div>
@@ -80,7 +83,9 @@
           </div>
           <div class="skill-wrap-description">
             <p class="skill-description">
-              開発はバージョン管理ツールとしてGitを利用、通常業務にはSpreadSheet(GAS含む)などG Suite製品をよく利用しています。マーケティングにおいてはGoogle Data Portalでレポーティングを行なっています。
+              開発はバージョン管理ツールとしてGitを利用しています。開発を行う際は機能ごとにブランチを切って作業し、基本的にはGit-flowに基づいたブランチ運用を行なっています。
+              デザインや素材書き出しにはSketchの利用が可能です。
+              通常業務にはGoogleスプレッドシート(GAS含む)などG Suite製品をよく利用しています。自動化できる作業はGASを書き、業務効率化を行います。マーケティングにおいてはGoogleデータポータルでレポーティングを行なっています。
             </p>
           </div>
         </div>
