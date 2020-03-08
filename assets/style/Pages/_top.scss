@@ -34,11 +34,14 @@
     margin-bottom: 3rem;
   }
   .mainvisual {
-    height: 50rem;
+    height: 30rem;
     margin-bottom: 5rem;
-    background: url('../images/top.jpg') 50% no-repeat fixed;
+    background: url('../images/top.jpg') 50% no-repeat;
     background-size: cover;
     opacity: .3;
+    @include desktop {
+      height: 50rem;
+    }
   }
 }
 
