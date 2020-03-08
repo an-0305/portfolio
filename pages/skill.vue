@@ -16,7 +16,10 @@
                   {{ item.type }}
                 </th>
                 <td>
-                  {{ item.level }}
+                  <span v-for="num of maxLevel" :key="num">
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg"></span>
+                  </span>
                 </td>
               </tr>
             </table>
@@ -104,6 +107,7 @@
 export default {
   data () {
     return {
+      maxLevel: 3,
       frontendSkill: [
         { type: 'HTML', level: 3 },
         { type: 'CSS(SCSS)', level: 3 },
