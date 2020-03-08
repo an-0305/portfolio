@@ -1,41 +1,37 @@
 <template>
   <div class="p-skill o-container">
-    <h2 class="title">skill</h2>
+    <h2 class="title">
+      skill
+    </h2>
     <div class="content">
       <section class="content-section">
-        <h3 class="head">フロントエンド</h3>
-          <div class="skill-wrap">
-            <div class="skill-wrap-table">
-              <table class="skill-table">
-                <tr>
-                  <th>HTML</th>
-                  <td>★★★</td>
-                </tr>
-                <tr>
-                  <th>CSS(SCSS)</th>
-                  <td>★★★</td>
-                </tr>
-                <tr>
-                  <th>Javascript</th>
-                  <td>★★</td>
-                </tr>
-                <tr>
-                  <th>Vue.js</th>
-                  <td>★</td>
-                </tr>
-                <tr>
-                  <th>Nuxt.js</th>
-                  <td>★</td>
-                </tr>
-              </table>
-            </div>
-            <div class="skill-wrap-description">
-              <p class="skill-description">デザインを元にHTML/CSS/Javascriptの設計・実装。特に共通機能はコンポーネント化するなど、保守性に気をつけた設計・実装を行っています。</p>
-            </div>
+        <h3 class="head">
+          フロントエンド
+        </h3>
+        <div class="skill-wrap">
+          <div class="skill-wrap-table">
+            <table class="skill-table">
+              <tr v-for="item in frontendSkill" :key="item.type">
+                <th>
+                  {{ item.type }}
+                </th>
+                <td>
+                  {{ item.level }}
+                </td>
+              </tr>
+            </table>
           </div>
+          <div class="skill-wrap-description">
+            <p class="skill-description">
+              デザインを元にHTML/CSS/Javascriptの設計・実装。特に共通機能はコンポーネント化するなど、保守性に気をつけた設計・実装を行っています。
+            </p>
+          </div>
+        </div>
       </section>
       <section class="content-section">
-        <h3 class="head">マーケティング</h3>
+        <h3 class="head">
+          マーケティング
+        </h3>
         <div class="skill-wrap">
           <div class="skill-wrap-table">
             <table class="skill-table">
@@ -58,12 +54,16 @@
             </table>
           </div>
           <div class="skill-wrap-description">
-            <p class="skill-description">Google Analyticsを用いてサイト内分析を行うことができます。 Google Analyticsだけでは追えないデータはスクレイピングによりデータ収集したり、受注データなどの各種データベースからSQLにより抽出・集計しています。</p>
+            <p class="skill-description">
+              Google Analyticsを用いてサイト内分析を行うことができます。 Google Analyticsだけでは追えないデータはスクレイピングによりデータ収集したり、受注データなどの各種データベースからSQLにより抽出・集計しています。
+            </p>
           </div>
         </div>
       </section>
       <section class="content-section">
-        <h3 class="head">ツール</h3>
+        <h3 class="head">
+          ツール
+        </h3>
         <div class="skill-wrap">
           <div class="skill-wrap-table">
             <table class="skill-table">
@@ -90,10 +90,28 @@
             </table>
           </div>
           <div class="skill-wrap-description">
-            <p class="skill-description">開発はバージョン管理ツールとしてGitを利用、通常業務にはSpreadSheet(GAS含む)などG Suite製品をよく利用しています。マーケティングにおいてはGoogle Data Portalでレポーティングを行なっています。</p>
+            <p class="skill-description">
+              開発はバージョン管理ツールとしてGitを利用、通常業務にはSpreadSheet(GAS含む)などG Suite製品をよく利用しています。マーケティングにおいてはGoogle Data Portalでレポーティングを行なっています。
+            </p>
           </div>
         </div>
       </section>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      frontendSkill: [
+        { type: 'HTML', level: 3 },
+        { type: 'CSS(SCSS)', level: 3 },
+        { type: 'Javascript', level: 2 },
+        { type: 'Vue.js', level: 1 },
+        { type: 'Nuxt.js', level: 1 }
+      ]
+    }
+  }
+}
+</script>
