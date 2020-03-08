@@ -10,6 +10,10 @@
         width: 100%;
         background: #fff;
         z-index: 100;
+        @include desktop {
+            position: relative;
+            width: $container-width;
+        }
     }
     @include desktop {
         width: $container-width;

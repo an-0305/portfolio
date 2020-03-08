@@ -49,5 +49,9 @@
     top: 5.7rem;
     animation: show .5s ease;
     z-index: 100;
+    @include desktop {
+      top: 300px;
+      animation: none;
+    }
   }
 }
