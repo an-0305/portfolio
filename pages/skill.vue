@@ -1,38 +1,120 @@
 <template>
   <div class="p-skill o-container">
-    <h2 class="title">skill</h2>
+    <h2 class="title">
+      skill
+    </h2>
     <div class="content">
       <section class="content-section">
-        <h3 class="head">フロントエンド</h3>
-        <ul class="skill-items">
-          <li class="item">HTML/CSS
-            <small class="notice">アパレルECサイトのコーディング</small>
-          </li>
-          <li class="item">Javascript
-            <small class="notice">アパレルECサイトのコーディング</small>
-          </li>
-          <li class="item">Nuxt.js
-            <small class="notice">当サイトのコーディング</small>
-          </li>
-        </ul>
+        <h3 class="head">
+          フロントエンド
+        </h3>
+        <div class="skill-wrap">
+          <div class="skill-wrap-table">
+            <table class="skill-table">
+              <tr v-for="item in frontendSkill" :key="item.type">
+                <th>
+                  {{ item.type }}
+                </th>
+                <td>
+                  <span v-for="num of maxLevel" :key="num">
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg" class="skill-level-icon"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg" class="skill-level-icon"></span>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="skill-wrap-description">
+            <p class="skill-description">
+              デザインを元にHTML/CSS/Javascriptの設計・実装。特に共通機能はコンポーネント化するなど、保守性に気をつけた設計・実装を行っています。
+            </p>
+          </div>
+        </div>
       </section>
       <section class="content-section">
-        <h3 class="head">マーケティング</h3>
-        <ul class="skill-items">
-          <li class="item">Google Analytics
-            <small class="notice">アパレルECのサイト内解析</small>
-          </li>
-          <li class="item">Google Tag Mangaer
-            <small class="notice">広告タグの管理・イベント計測</small>
-          </li>
-          <li class="item">SQL
-            <small class="notice">テーブル結合・集計関数・サブクエリ</small>
-          </li>
-          <li class="item">Python
-            <small class="notice">スクレイピング</small>
-          </li>
-        </ul>
+        <h3 class="head">
+          マーケティング
+        </h3>
+        <div class="skill-wrap">
+          <div class="skill-wrap-table">
+            <table class="skill-table">
+              <tr v-for="item in marketingSkill" :key="item.type">
+                <th>
+                  {{ item.type }}
+                </th>
+                <td>
+                  <span v-for="num of maxLevel" :key="num">
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg" class="skill-level-icon"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg" class="skill-level-icon"></span>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="skill-wrap-description">
+            <p class="skill-description">
+              Google Analyticsを用いてサイト内分析を行うことができます。 Google Analyticsだけでは追えないデータはスクレイピングによりデータ収集したり、受注データなどの各種データベースからSQLにより抽出・集計しています。
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="content-section">
+        <h3 class="head">
+          ツール
+        </h3>
+        <div class="skill-wrap">
+          <div class="skill-wrap-table">
+            <table class="skill-table">
+              <tr v-for="item in Tool" :key="item.type">
+                <th>
+                  {{ item.type }}
+                </th>
+                <td>
+                  <span v-for="num of maxLevel" :key="num">
+                    <span v-if="item.level >= num"><img src="../assets/images/star.svg" class="skill-level-icon"></span>
+                    <span v-else><img src="../assets/images/star-edge.svg" class="skill-level-icon"></span>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <div class="skill-wrap-description">
+            <p class="skill-description">
+              開発はバージョン管理ツールとしてGitを利用、通常業務にはSpreadSheet(GAS含む)などG Suite製品をよく利用しています。マーケティングにおいてはGoogle Data Portalでレポーティングを行なっています。
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  data () {
+    return {
+      maxLevel: 3,
+      frontendSkill: [
+        { type: 'HTML', level: 3 },
+        { type: 'CSS(SCSS)', level: 3 },
+        { type: 'Javascript', level: 2 },
+        { type: 'Vue.js', level: 1 },
+        { type: 'Nuxt.js', level: 1 }
+      ],
+      marketingSkill: [
+        { type: 'Google Analytics', level: 2 },
+        { type: 'Google Tag Manager', level: 2 },
+        { type: 'SQL', level: 2 },
+        { type: 'Python', level: 1 }
+      ],
+      Tool: [
+        { type: 'Googleスプレッドシート(GAS)', level: 2 },
+        { type: 'Googleデータポータル', level: 2 },
+        { type: 'Backlog', level: 2 },
+        { type: 'Git', level: 2 },
+        { type: 'Sketch', level: 1 }
+      ]
+    }
+  }
+}
+</script>

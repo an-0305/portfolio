@@ -1,20 +1,28 @@
 .p-skill {
   .content-section {
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
     .head {
-      margin-bottom: 1rem;
+      margin-bottom: 3rem;
       font-weight: bold;
     }
-    .skill-items {
-      margin: 0;
-      padding-left: 2rem;
-      list-style: circle;
-      .item {
-        margin-bottom: 1rem;
+    .skill-wrap {
+      display: flex;
+      &-table {
+        width: 40%;
+      }
+      &-description {
+        flex: 1;
       }
     }
-    .notice {
-      display: block;
+    .skill-table {
+      width: 100%;
+      th {
+        width: 75%;
+      }
+    }
+    .skill-level-icon {
+      width: 1.5rem;
+      margin-right: .5rem;
     }
   }
 }
