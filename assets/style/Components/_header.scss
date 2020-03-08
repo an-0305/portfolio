@@ -4,6 +4,13 @@
     align-items: center;
     padding: 1rem;
     border-bottom: 1px solid $sub-color;
+    &.fixed {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #fff;
+        z-index: 100;
+    }
     @include desktop {
         width: $container-width;
         margin: 0 auto;
