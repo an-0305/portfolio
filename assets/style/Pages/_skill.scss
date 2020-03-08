@@ -7,8 +7,17 @@
     }
     .skill-wrap {
       display: flex;
+      flex-direction: column;
+      @include desktop {
+        flex-direction: row;
+      }
       &-table {
-        width: 40%;
+        width: 100%;
+        margin-bottom: 3rem;
+        @include desktop {
+          width: 40%;
+          margin: 0;
+        }
       }
       &-description {
         flex: 1;
