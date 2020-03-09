@@ -2,17 +2,17 @@
   <div v-bind:class="{active: isMenuActive}" class="c-menu">
     <ul class="menu-list">
       <li @click="onClickNavi" class="menu-item">
-        <nuxt-link to="about">
+        <nuxt-link to="/about">
           about
         </nuxt-link>
       </li>
       <li @click="onClickNavi" class="menu-item">
-        <nuxt-link to="skill">
+        <nuxt-link to="/skill">
           skill
         </nuxt-link>
       </li>
       <li @click="onClickNavi" class="menu-item">
-        <nuxt-link to="work">
+        <nuxt-link to="/work">
           work
         </nuxt-link>
       </li>
