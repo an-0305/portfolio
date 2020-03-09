@@ -13,7 +13,7 @@
         <p>マーケティングにおいても、開発の経験を活かしてプログラミングによってタスクを自動化したり、スクレイピングによるデータ収集を行うことができます。</p>
       </div>
       <div class="button-wrap">
-        <nuxt-link to="about" class="c-button">View More</nuxt-link>
+        <nuxt-link to="/about" class="c-button">View More</nuxt-link>
       </div>
     </section>
     <section class="content skill">
@@ -37,7 +37,7 @@
         </div>
       </div>
       <div class="button-wrap">
-        <nuxt-link to="skill" class="c-button">View More</nuxt-link>
+        <nuxt-link to="/skill" class="c-button">View More</nuxt-link>
       </div>
     </section>
     <section class="content work">
@@ -51,7 +51,7 @@
         <p>月に一度、アパレル系ECサイトのコンサルティングを行いました。Google Analyticsや受注データから売上分析を行いました。</p>
       </div>
       <div class="button-wrap">
-        <nuxt-link to="work" class="c-button">View More</nuxt-link>
+        <nuxt-link to="/work" class="c-button">View More</nuxt-link>
       </div>
     </section>
   </div>
