@@ -46,14 +46,19 @@ export default {
     ['@nuxtjs/google-tag-manager', {
       id: 'GTM-KL5NQ9X',
       pageTracking: true
-    }]
+    }],
+    '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    proxy: true
   },
+  proxy: [
+    'https://akari.life/ext/skill.json'
+  ],
   /*
   ** Build configuration
   */
