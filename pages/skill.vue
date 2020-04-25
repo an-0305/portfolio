@@ -97,29 +97,11 @@
 <script>
 export default {
   data () {
-    return {
-      maxLevel: 3,
-      frontendSkill: [
-        { type: 'HTML', level: 3 },
-        { type: 'CSS(SCSS)', level: 3 },
-        { type: 'Javascript', level: 2 },
-        { type: 'Vue.js', level: 1 },
-        { type: 'Nuxt.js', level: 1 }
-      ],
-      marketingSkill: [
-        { type: 'Google Analytics', level: 2 },
-        { type: 'Google Tag Manager', level: 2 },
-        { type: 'SQL', level: 2 },
-        { type: 'Python', level: 1 }
-      ],
-      Tool: [
-        { type: 'Googleスプレッドシート(GAS)', level: 2 },
-        { type: 'Googleデータポータル', level: 2 },
-        { type: 'Backlog', level: 2 },
-        { type: 'Git', level: 2 },
-        { type: 'Sketch', level: 1 }
-      ]
-    }
+  },
+  async asyncData ({ $axios }) {
+    const url = '/ext/skill.json'
+    const response = await $axios.$get(url)
+    return response
   }
 }
 </script>
