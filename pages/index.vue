@@ -19,7 +19,7 @@
           </nuxt-link>
         </div>
       </section>
-      <section class="content skill">
+      <section v-scroll="handleScroll" class="content skill">
         <h2 class="title">
           skill
         </h2>
@@ -61,7 +61,7 @@
           </nuxt-link>
         </div>
       </section>
-      <section class="content work">
+      <section v-scroll="handleScroll" class="content work">
         <h2 class="title">
           work
         </h2>
@@ -86,3 +86,23 @@
     </div>
   </main>
 </template>
+
+<script>
+export default {
+  data () {
+    return { screenHeight: 0 }
+  },
+  mounted () {
+    this.screenHeight = window.parent.screen.height
+  },
+  methods: {
+    handleScroll (evt, el) {
+      const top = el.getBoundingClientRect().top
+      if (top < this.screenHeight / 2) {
+        el.setAttribute('style', 'opacity: 1')
+      }
+      return top < 0
+    }
+  }
+}
+</script>
