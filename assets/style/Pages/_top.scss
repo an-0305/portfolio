@@ -2,6 +2,11 @@
   .content + .content {
     margin-top: 10rem;
   }
+  .content.skill ,
+  .content.work {
+    opacity: 0;
+    transition: opacity 1s;
+  }
   .button-wrap {
     padding-top: 2rem;
     text-align: center;
